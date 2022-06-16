@@ -2,9 +2,12 @@
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
+vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
+vendor/lib64/libloadalgo_stub.so
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
@@ -31,7 +34,6 @@ vendor/lib/libresampler.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
-vendor/lib/libvideoNS.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -488,22 +490,6 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so
 
-# Media (Dolby Vision)
-vendor/bin/hw/dolbycodec2
-vendor/etc/dolby_vision.cfg
-vendor/etc/init/dolbycodec2.rc
-vendor/lib/c2.dolby.avc.dec.so
-vendor/lib/c2.dolby.avc.sec.dec.so
-vendor/lib/c2.dolby.client.so
-vendor/lib/c2.dolby.egl.so
-vendor/lib/c2.dolby.hevc.dec.so
-vendor/lib/c2.dolby.hevc.sec.dec.so
-vendor/lib/c2.dolby.store.so
-vendor/lib/libcodec2_soft_common.so
-vendor/lib/libdolbyottcameracontrol.so
-vendor/lib/libdovi.so
-vendor/lib/libsfplugin_ccodec_utils.so
-
 # Media (VPU firmware)
 vendor/firmware/vpu20_2v.b00
 vendor/firmware/vpu20_2v.b01
@@ -887,7 +873,6 @@ vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WFD
--system/framework/WfdCommon.jar
 system_ext/bin/wfdservice64
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
